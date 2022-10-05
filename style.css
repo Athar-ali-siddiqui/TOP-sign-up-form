@@ -1,0 +1,123 @@
+@font-face {
+    font-family: norse;
+    src: url('font/Norse-Bold.otf');
+  }
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+body>.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    background: url('image/jannik-selz-unsplash.jpg') ;
+    width: 40vw;
+    height: 100vh;
+    background-size: 100%;
+}
+.odin-skull{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: rgba(9, 3, 6, 0.5);
+    width: 40vw;
+    height: 30vh;
+}
+.odin-skull img{
+    width: 10vw;
+    height: 25vh;
+    
+}
+.odin-skull h2{
+    font-family: norse;
+    font-size: 48px;
+    letter-spacing: 4px;
+    color: aliceblue;
+}
+.img-by , .img-by a{
+    color: aliceblue;
+}
+
+body>.right{
+    /* padding-left: 24px; */
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+body> .right > *{
+    padding-left: 24px;
+}
+.div1 , .div2 {
+    font-weight: bold;
+    font-size: 24px;
+}
+.form-input{
+    padding-left: 0px;
+    background: rgb(227, 224, 224);
+    height: 270px;
+}
+
+
+.form-input > * > * {
+    display: flex;
+    padding-bottom:24px ;
+    /* width: 100%; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* padding-bottom: 16px; */
+    gap: 24px;
+
+}
+
+.form-input > * > * > * {
+    display: flex;
+    width: 35%;
+     /* gap: 24px; */
+    flex-direction: column;
+    /* padding-bottom: 16px; */
+
+}
+label{
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    /* color: rgb(99, 99, 99); */
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+
+input{
+    border: 0px ;
+    border-radius: 2px;
+    height: 25px;
+    background: radial-gradient( rgba(234, 93, 93, 0.3) ,rgba(81, 93, 197, 0.22));
+}
+
+input:focus{
+    
+    box-shadow: rgba(234, 93, 93, 0.3) 0px 24px 43px, rgba(81, 93, 197, 0.22) 5px 20px 17px;
+}
+.div4 button{
+    font-size: 16px;
+    font-weight: bold;
+    border: 0px;
+    height: 40px;
+    width: 170px;
+    border-radius: 10px;
+    background: radial-gradient( rgba(234, 93, 93, 0.7) ,rgba(81, 93, 197, 0.7));
+}
+.div5 a{
+    font-weight: bold;
+    color: rgb(3, 85, 112);
+}
+input:invalid{
+    box-shadow: 2px 2px 0px 0px rgb(235, 17, 17);
+}
